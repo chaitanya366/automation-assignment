@@ -1,10 +1,38 @@
 # UI + API Automation Assignment  
 ### Playwright (JavaScript)
+This project contains automated tests for both UI (Book Store Application) and API (ReqRes API) using Playwright and JavaScript.
+
+UI Automation — Book Store Application
+# Features Automated
+Navigate to https://demoqa.com/
+Manually create a new user (registration NOT automated)
+Navigate to Book Store Application
+Login with manually created user
+Validate:Username is displayed
+Logout button is visible
+Click Book Store
+Search for: "Learning JavaScript Design Patterns"
+Validate the book appears in search results
+Extract and save Title, Author, Publisher to a file
+Logout
+
+API Automation — ReqRes.in
+API Base URL: https://reqres.in/
+# Automated API Scenarios
+1. Create a user
+   POST /api/users
+   Validate HTTP 201
+   Store returned userId
+2. Get user details
+   GET /api/users/{id}
+   Validate response body matches created user
+3. Update the user
+   PUT /api/users/{id}
+   Validate updated fields (name)
 
 ## Instructions
-1. Run: `npm install`
-2. Run tests: `npx playwright test`
-
-Includes:
-- UI automation for DemoQA Bookstore
-- API automation for ReqRes
+1. Run: npm install
+2. Run: npx playwright install
+3. Run tests: npx playwright test
+4. Run UI tests: npx playwright test tests/ui-tests.spec.js --headed
+5. Run API tests: npx playwright test tests/api-tests.spec.js
