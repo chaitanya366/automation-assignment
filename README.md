@@ -2,8 +2,8 @@
 ### Playwright (JavaScript)
 This project contains automated tests for both UI (Book Store Application) and API (ReqRes API) using Playwright and JavaScript.
 
-UI Automation — Book Store Application
-# Features Automated
+# UI Automation — Book Store Application
+## Features Automated
 1. Navigate to https://demoqa.com/
 2. Manually create a new user (registration NOT automated)
 3. Navigate to Book Store Application
@@ -16,9 +16,9 @@ UI Automation — Book Store Application
 10. Extract and save Title, Author, Publisher to a file
 11. Logout
 
-API Automation — ReqRes.in
+# API Automation — ReqRes.in
 API Base URL: https://reqres.in/
-# Automated API Scenarios
+## Automated API Scenarios
 1. Create a user
    POST /api/users
    Validate HTTP 201
