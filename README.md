@@ -4,17 +4,17 @@ This project contains automated tests for both UI (Book Store Application) and A
 
 UI Automation — Book Store Application
 # Features Automated
-Navigate to https://demoqa.com/
-Manually create a new user (registration NOT automated)
-Navigate to Book Store Application
-Login with manually created user
-Validate:Username is displayed
-Logout button is visible
-Click Book Store
-Search for: "Learning JavaScript Design Patterns"
-Validate the book appears in search results
-Extract and save Title, Author, Publisher to a file
-Logout
+1. Navigate to https://demoqa.com/
+2. Manually create a new user (registration NOT automated)
+3. Navigate to Book Store Application
+4. Login with manually created user
+5. Validate:Username is displayed
+6. Logout button is visible
+7. Click Book Store
+8. Search for: "Learning JavaScript Design Patterns"
+9. Validate the book appears in search results
+10. Extract and save Title, Author, Publisher to a file
+11. Logout
 
 API Automation — ReqRes.in
 API Base URL: https://reqres.in/
