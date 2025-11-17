@@ -2,8 +2,9 @@ import { test, expect } from '@playwright/test';
 import fs from 'fs';
 
 test('DemoQA Bookstore UI Test', async ({ page }) => {
-  const username = "YOUR_USERNAME";
-  const password = "YOUR_PASSWORD";
+  // Create user
+  const username = "Chaitanya";
+  const password = "FinacPlus";
 
   await page.goto('https://demoqa.com/books');
   await page.click('#login');
@@ -21,7 +22,7 @@ test('DemoQA Bookstore UI Test', async ({ page }) => {
   await expect(book).toBeVisible();
 
   await book.click();
-
+  
   const title = await page.locator('#title-wrapper').innerText();
   const author = await page.locator('#author-wrapper').innerText();
   const publisher = await page.locator('#publisher-wrapper').innerText();
