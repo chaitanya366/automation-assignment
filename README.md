@@ -30,7 +30,7 @@ API Base URL: https://reqres.in/
    PUT /api/users/{id}
    Validate updated fields (name)
 
-## Instructions
+## Instructions: How to Run the Tests
 1. Run: npm install
 2. Run: npx playwright install
 3. Run tests: npx playwright test
